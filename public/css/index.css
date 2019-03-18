@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css?family=Merriweather+Sans:800");
+
+@font-face {
+  font-family: "alex";
+  src: url("/assets/font.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:active,
+a:link {
+  text-decoration: none !important;
+  color: #302d27 !important;
+}
+
+body {
+  padding-top: 70px;
+}
+
+.name {
+  color: #302d27;
+  white-space: nowrap;
+  font-size: 40pt;
+  font-family: "alex", sans-serif;
+  padding: 0px 70px 0px 0px;
+}
+
+.nameme {
+  vertical-align: baseline;
+}
+
+#namealex {
+  font-size: 20pt;
+  font-weight: bold;
+  font-family: "alex", sans-serif;
+  color: white;
+}
+
+.highlight1 {
+  box-shadow: inset 0 -12px 0 #b5ffe1;
+  text-decoration: none;
+}
+
+.footer {
+  font-family: "alex", sans-serif;
+  font-size: 1.2em;
+}
+.navbar-brand {
+  font-family: "alex", sans-serif;
+  text-transform: uppercase;
+}
+
+.navbar {
+  background-image: url("/assets/marble.jpg");
+}
+
+.container1 {
+  padding: 1vh 10vw 3vh;
+  font-family: "alex", sans-serif;
+  font-size: 2em;
+}
+
+.container2 {
+  padding: 1vh 10vw 3vh;
+  font-family: "alex", sans-serif;
+  font-size: 2em;
+}
+
+.workbg {
+  padding: 0vh 10vw 10vh;
+  font-family: "alex", sans-serif;
+}
+
+.card {
+  background-image: url("/assets/marble.jpg");
+  color: #302d27;
+}
+
+.imageme {
+  position: fixed;
+}
+
+.scroll-down {
+  height: 100px;
+  border-color: #302d27;
+  margin-top: 30px;
+  width: 1px;
+  border: none;
+  border-left: 1px solid;
+}
+
+.scroll-down-mobile {
+  display: none;
+}
+
+.cardtitle {
+  text-transform: uppercase;
+}
+
+hr {
+  display: block;
+  unicode-bidi: isolate;
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+  overflow: hidden;
+  border-style: inset;
+  border-width: 1px;
+}
+
+.mobilediv {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .workbg {
+    display: none;
+  }
+  .footer {
+    display: none;
+  }
+  .mobilediv {
+    display: block;
+  }
+  .scroll-down {
+    display: none;
+  }
+  .nameme {
+    display: none;
+  }
+  .mobilediv {
+    padding: 0vh 10vw 10vh;
+    font-family: "alex", sans-serif;
+  }
+  .scroll-down-mobile {
+    display: block;
+    height: 50px;
+    border-color: #302d27;
+    margin-top: 60px;
+    width: 1px;
+    border: none;
+    border-left: 1px solid;
+  }
+}
