@@ -1,6 +1,8 @@
 const express = require("express");
 const path = require("path");
 const app = express();
+
+const port = process.env.PORT || 3000;
 const geocode = require("./geocode");
 const forecast = require("./forecast");
 
@@ -31,6 +33,6 @@ app.get("/weather", (req, res) => {
   }
 });
 
-app.listen(80, () => {
-  console.log("listening on port 3000");
+app.listen(port, () => {
+  console.log(`listening on port ${port}`);
 });
